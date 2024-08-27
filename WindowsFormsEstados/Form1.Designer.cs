@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.bntEstado = new System.Windows.Forms.Button();
             this.cmbNorte = new System.Windows.Forms.ComboBox();
@@ -58,9 +59,35 @@
             // 
             this.cmbEstado.AutoCompleteCustomSource.AddRange(new string[] {
             "SP"});
+            this.cmbEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Items.AddRange(new object[] {
-            "SP"});
+            "SP",
+            "MA",
+            "PI",
+            "CE",
+            "RN",
+            "PE",
+            "PB",
+            "SE",
+            "AL",
+            "BA",
+            "MT",
+            "MS",
+            "GO",
+            "RJ",
+            "ES",
+            "MG",
+            "PR",
+            "RS",
+            "SC",
+            "AM",
+            "RR",
+            "AP",
+            "PA",
+            "TO",
+            "RO",
+            "AC"});
             this.cmbEstado.Location = new System.Drawing.Point(163, 73);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(147, 21);
@@ -68,12 +95,13 @@
             // 
             // bntEstado
             // 
+            this.bntEstado.BackColor = System.Drawing.SystemColors.Info;
             this.bntEstado.Location = new System.Drawing.Point(355, 71);
             this.bntEstado.Name = "bntEstado";
             this.bntEstado.Size = new System.Drawing.Size(26, 23);
             this.bntEstado.TabIndex = 1;
             this.bntEstado.Text = "-";
-            this.bntEstado.UseVisualStyleBackColor = true;
+            this.bntEstado.UseVisualStyleBackColor = false;
             this.bntEstado.Click += new System.EventHandler(this.bntEstado_Click);
             // 
             // cmbNorte
@@ -86,12 +114,13 @@
             // 
             // btnNorte
             // 
+            this.btnNorte.BackColor = System.Drawing.SystemColors.Info;
             this.btnNorte.Location = new System.Drawing.Point(355, 112);
             this.btnNorte.Name = "btnNorte";
             this.btnNorte.Size = new System.Drawing.Size(26, 23);
             this.btnNorte.TabIndex = 3;
             this.btnNorte.Text = "-";
-            this.btnNorte.UseVisualStyleBackColor = true;
+            this.btnNorte.UseVisualStyleBackColor = false;
             this.btnNorte.Click += new System.EventHandler(this.btnNorte_Click);
             // 
             // cmbNordeste
@@ -104,12 +133,13 @@
             // 
             // btnNordeste
             // 
+            this.btnNordeste.BackColor = System.Drawing.SystemColors.Info;
             this.btnNordeste.Location = new System.Drawing.Point(355, 151);
             this.btnNordeste.Name = "btnNordeste";
             this.btnNordeste.Size = new System.Drawing.Size(26, 23);
             this.btnNordeste.TabIndex = 5;
             this.btnNordeste.Text = "-";
-            this.btnNordeste.UseVisualStyleBackColor = true;
+            this.btnNordeste.UseVisualStyleBackColor = false;
             this.btnNordeste.Click += new System.EventHandler(this.btnNordeste_Click);
             // 
             // cmbCentro
@@ -122,12 +152,13 @@
             // 
             // btnCentro
             // 
+            this.btnCentro.BackColor = System.Drawing.SystemColors.Info;
             this.btnCentro.Location = new System.Drawing.Point(355, 187);
             this.btnCentro.Name = "btnCentro";
             this.btnCentro.Size = new System.Drawing.Size(26, 23);
             this.btnCentro.TabIndex = 7;
             this.btnCentro.Text = "-";
-            this.btnCentro.UseVisualStyleBackColor = true;
+            this.btnCentro.UseVisualStyleBackColor = false;
             this.btnCentro.Click += new System.EventHandler(this.btnCentro_Click);
             // 
             // cmbSuldeste
@@ -140,27 +171,30 @@
             // 
             // btnSudeste
             // 
+            this.btnSudeste.BackColor = System.Drawing.SystemColors.Info;
             this.btnSudeste.Location = new System.Drawing.Point(355, 225);
             this.btnSudeste.Name = "btnSudeste";
             this.btnSudeste.Size = new System.Drawing.Size(26, 23);
             this.btnSudeste.TabIndex = 9;
             this.btnSudeste.Text = "-";
-            this.btnSudeste.UseVisualStyleBackColor = true;
+            this.btnSudeste.UseVisualStyleBackColor = false;
             this.btnSudeste.Click += new System.EventHandler(this.btnSudeste_Click);
             // 
             // btnSul
             // 
+            this.btnSul.BackColor = System.Drawing.SystemColors.Info;
             this.btnSul.Location = new System.Drawing.Point(355, 268);
             this.btnSul.Name = "btnSul";
             this.btnSul.Size = new System.Drawing.Size(26, 23);
             this.btnSul.TabIndex = 11;
             this.btnSul.Text = "-";
-            this.btnSul.UseVisualStyleBackColor = true;
+            this.btnSul.UseVisualStyleBackColor = false;
             this.btnSul.Click += new System.EventHandler(this.btnSul_Click);
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.SystemColors.Info;
             this.lblEstado.Location = new System.Drawing.Point(420, 76);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(13, 13);
@@ -170,6 +204,7 @@
             // lblNorte
             // 
             this.lblNorte.AutoSize = true;
+            this.lblNorte.BackColor = System.Drawing.SystemColors.Info;
             this.lblNorte.Location = new System.Drawing.Point(420, 115);
             this.lblNorte.Name = "lblNorte";
             this.lblNorte.Size = new System.Drawing.Size(13, 13);
@@ -179,6 +214,7 @@
             // lblNordeste
             // 
             this.lblNordeste.AutoSize = true;
+            this.lblNordeste.BackColor = System.Drawing.SystemColors.Info;
             this.lblNordeste.Location = new System.Drawing.Point(420, 154);
             this.lblNordeste.Name = "lblNordeste";
             this.lblNordeste.Size = new System.Drawing.Size(13, 13);
@@ -188,6 +224,7 @@
             // lblCentro
             // 
             this.lblCentro.AutoSize = true;
+            this.lblCentro.BackColor = System.Drawing.SystemColors.Info;
             this.lblCentro.Location = new System.Drawing.Point(420, 192);
             this.lblCentro.Name = "lblCentro";
             this.lblCentro.Size = new System.Drawing.Size(13, 13);
@@ -197,6 +234,7 @@
             // lblSuldeste
             // 
             this.lblSuldeste.AutoSize = true;
+            this.lblSuldeste.BackColor = System.Drawing.SystemColors.Info;
             this.lblSuldeste.Location = new System.Drawing.Point(420, 228);
             this.lblSuldeste.Name = "lblSuldeste";
             this.lblSuldeste.Size = new System.Drawing.Size(13, 13);
@@ -206,6 +244,7 @@
             // lblSul
             // 
             this.lblSul.AutoSize = true;
+            this.lblSul.BackColor = System.Drawing.SystemColors.Info;
             this.lblSul.Location = new System.Drawing.Point(420, 273);
             this.lblSul.Name = "lblSul";
             this.lblSul.Size = new System.Drawing.Size(13, 13);
@@ -215,6 +254,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Info;
             this.label1.Location = new System.Drawing.Point(57, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
@@ -224,6 +264,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Location = new System.Drawing.Point(57, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
@@ -233,6 +274,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Info;
             this.label3.Location = new System.Drawing.Point(57, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
@@ -242,6 +284,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Info;
             this.label4.Location = new System.Drawing.Point(57, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
@@ -251,6 +294,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
             this.label5.Location = new System.Drawing.Point(57, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
@@ -260,6 +304,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Location = new System.Drawing.Point(57, 273);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 13);
@@ -278,7 +323,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(525, 571);
             this.Controls.Add(this.cmbSul);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
